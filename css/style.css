@@ -9,3 +9,6 @@ img{
     background-size: contain;
     background-position: center;
 }
+.wrapper{
+    display: flex;
+}
