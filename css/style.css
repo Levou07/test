@@ -3,3 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+img{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
