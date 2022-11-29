@@ -5,7 +5,7 @@ let wrapper = document.querySelector('.wrapper')
 let wrapper2 = document.querySelector('.wrapper2')
 let wrapp = document.querySelector('.wrapp')
 
-let count = inputEnd.textContent = 1
+let count = inputEnd.textContent = 0
 let inpV = inp1.value.length
 
 inp1.addEventListener('keyup', (e)=>{
