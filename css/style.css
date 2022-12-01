@@ -1,14 +1,100 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-img{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+
 .wrapper{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tg__icon{
+    list-style-type: none;
+    padding: 0;
+}
+
+.center__ul a:hover{
+    background-color: #0000003a;
+}
+
+.left__tg{
+    background-color: #0E1621;
+    height: 50vh;
+    width: 9%;
+    text-align: center;
+}
+.center__tg{
+    background-color: #17212B;
+    height: 50vh;
+    width: 33%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #8e8e8e;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50%;
+    height: 1px;
+    background: #878787;
+}
+
+.right__tg{
+    background-color: #0E1621;
+    height: 50vh;
+    width: 58%;
+}
+.btn{
+    color: white;
+}
+.btn:hover{
+    color: #ffffffa5;
+}
+.btn:active{
+    background-color: #ffffffb8;
+}
+
+.newBtn{
+    list-style-type: none;
+    border: none;
+    margin-top: 5px;
+    text-align: left;
+    background-color: #17212B;
+    width: 400px;
+}
+.newBtn:hover{
+    transition: 0.3s ease all;
+    background-color: #263038;
+}
+
+.newLi{
+    color: white;
+}
+.newLi2{
+    color: #5F8091;
+    padding: 0;
+}
+.center__ul{
+    overflow: hidden;
+    padding: 0;
+}
+
+.post{
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #25303E;
+}
+
+.tg__blue{
+    background-color: #2B5278;
+    margin-right: 20px;
+}
+.right__tg{
+    overflow-y: scroll;
+
 }
