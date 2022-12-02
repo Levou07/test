@@ -17,14 +17,14 @@
 .left__tg{
     background-color: #0E1621;
     height: 50vh;
-    width: 9%;
     text-align: center;
 }
 .center__tg{
     background-color: #17212B;
     height: 50vh;
-    width: 33%;
     overflow-y: hidden;
+    display: block;
+    justify-content: center;
 }
 .center__tg:hover{
     overflow-y: scroll;
@@ -48,7 +48,7 @@
 .right__tg{
     background-color: #0E1621;
     height: 50vh;
-    width: 58%;
+    min-width: 40%;
     overflow: hidden;
 }
 .btn{
@@ -108,6 +108,4 @@
 }
 .wrapper{
     border-radius: 10px;
-    background-color: red;
-    max-width: 100%;
 }
