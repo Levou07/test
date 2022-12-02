@@ -139,3 +139,25 @@
 body{
     height: 1000px;
 }
+.btn2{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #ebebeb;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+.btn3{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #ebebeb;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+.tg__icon{
+    display: none;
+}

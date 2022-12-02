@@ -114,3 +114,23 @@ let elinp1 = document.querySelector('.inp1')
 elinp1.addEventListener('click', ()=>{
     elinp1.style.backgroundColor = '#0E1621'
 })
+
+let elbtn2 = document.querySelector('.btn2')
+let eltg__icon = document.querySelector('.tg__icon')
+let elbtn3 = document.querySelector('.btn3')
+
+elbtn3.style.display = 'none'
+
+elbtn2.addEventListener('click', ()=>{
+    eltg__icon.style.display = 'block'
+    eltg__icon.style.transition = '0.5s all ease'
+    elbtn2.style.display = 'none'
+    elbtn3.style.display = 'block'
+})
+
+elbtn3.addEventListener('click', ()=>{
+    eltg__icon.style.display = 'none'
+    eltg__icon.style.transition = '0.5s all'
+    elbtn2.style.display = 'block'
+    elbtn3.style.display = 'none'
+})
