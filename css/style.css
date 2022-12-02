@@ -1,4 +1,6 @@
-
+body{
+    height: 1000px;
+}
 
 .wrapper{
     display: flex;
@@ -136,9 +138,7 @@
     border: none;
     border-radius: 5px;
 }
-body{
-    height: 1000px;
-}
+
 .btn2{
     margin-left: 7px;
     height: 35px;
@@ -158,6 +158,57 @@ body{
     border-radius: 5px;
 }
 
+.btn4{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #ebebeb;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+
+}
+.btn5{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #ebebeb;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+    display: none;
+}
+.btn6{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #b80000;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+    display: none;
+}
+
 .tg__icon{
     display: none;
+}
+.right__icon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 10px;
+    flex-wrap: wrap;
+    margin-right: 7px;
+    position: sticky;
+    top: 0;
+    background-color: #0E1621;
+}
+.btn__full{
+    margin-left: 7px;
+    height: 35px;
+    background-color: #0E1621;
+    color: #ebebeb;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
 }

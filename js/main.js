@@ -68,7 +68,12 @@ function tgpost(data){
 
     let btn = document.querySelectorAll('.btn')
     let newBttn = document.querySelectorAll('.newBtn')
+    let elbtnFul = document.querySelector('.btn__full')
     
+    elbtnFul.addEventListener('click', ()=>{
+        newBttn.style.display = 'block'
+    })
+
     btn.forEach(e=>{
         rigth__tg.innerHTML = ''
         e.addEventListener('click', ()=>{
@@ -118,6 +123,7 @@ elinp1.addEventListener('click', ()=>{
 let elbtn2 = document.querySelector('.btn2')
 let eltg__icon = document.querySelector('.tg__icon')
 let elbtn3 = document.querySelector('.btn3')
+let elbtnFul = document.querySelector('.btn__full')
 
 elbtn3.style.display = 'none'
 
@@ -126,6 +132,7 @@ elbtn2.addEventListener('click', ()=>{
     eltg__icon.style.transition = '0.5s all ease'
     elbtn2.style.display = 'none'
     elbtn3.style.display = 'block'
+    elbtnFul.style.display = 'none'
 })
 
 elbtn3.addEventListener('click', ()=>{
@@ -133,4 +140,20 @@ elbtn3.addEventListener('click', ()=>{
     eltg__icon.style.transition = '0.5s all'
     elbtn2.style.display = 'block'
     elbtn3.style.display = 'none'
+    elbtnFul.style.display = 'block'
+})
+
+let elbtn4 = document.querySelector('.btn4')
+let elbtn5 = document.querySelector('.btn5')
+let elbtn6 = document.querySelector('.btn6')
+
+elbtn4.addEventListener('click', (e)=>{
+    if(e == e){
+        elbtn5.style.display = 'block'
+        elbtn6.style.display = 'block'
+    }
+    window.addEventListener('mousedown', ()=>{
+        elbtn5.style.display = 'none'
+        elbtn6.style.display = 'none'
+    })
 })
