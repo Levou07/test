@@ -8,7 +8,9 @@
 .tg__icon{
     list-style-type: none;
     padding: 0;
+    overflow: hidden;
 }
+
 
 .center__ul a:hover{
     background-color: #0000003a;
@@ -16,12 +18,13 @@
 
 .left__tg{
     background-color: #0E1621;
-    height: 50vh;
+    height: 55vh;
     text-align: center;
 }
+
 .center__tg{
     background-color: #17212B;
-    height: 50vh;
+    height: 55vh;
     overflow-y: hidden;
 }
 .center__tg:hover{
@@ -45,7 +48,7 @@
 
 .right__tg{
     background-color: #0E1621;
-    height: 50vh;
+    height: 55vh;
     min-width: 60%;
     overflow: hidden;
 }
