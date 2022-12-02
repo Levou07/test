@@ -107,4 +107,10 @@ function tgpost(data){
         })
     })    
 }
-},400)
+},100)
+
+let elinp1 = document.querySelector('.inp1')
+
+elinp1.addEventListener('click', ()=>{
+    elinp1.style.backgroundColor = '#0E1621'
+})
