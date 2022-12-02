@@ -26,6 +26,8 @@ function mapper(data){
     });
 }
 
+setTimeout(()=>{
+    
 fetch('https://jsonplaceholder.typicode.com/posts')
 .then((resp) => resp.json())
 .then((posts) => {
@@ -60,42 +62,19 @@ function tgpost(data){
                 }
             })
         })
-        
-        let myIcon = document.querySelectorAll('.icons')
-        let Btn = document.querySelectorAll('.newBtn')
-        myIcon.forEach((h)=>{
-            rigth__tg.innerHTML = ''
-                h.addEventListener('click', ()=>{
-                    rigth__tg.innerHTML = ''
-
-                    Btn.forEach(b => {
-                        if(h.id == 1){
-                            b.style.display = 'none'
-                            Btn[0].style.display = 'block'                            
-                            Btn[1].style.display = 'block'
-                        }else if(h.id == 2){
-                            b.style.display = 'none'
-                            Btn[2].style.display = 'block'                            
-                            Btn[3].style.display = 'block'
-                        }else if(h.id == 3){
-                            b.style.display = 'none'
-                            Btn[4].style.display = 'block'                            
-                            Btn[5].style.display = 'block'
-                        }
-                        else if(h.id == 4){
-                            b.style.display = 'none'
-                            Btn[6].style.display = 'block'                            
-                            Btn[7].style.display = 'block'
-                        }else if(h.id == 5){
-                            b.style.display = 'none'
-                            Btn[8].style.display = 'block'                            
-                            Btn[9].style.display = 'block'
-                        }else{
-                            console.log('error');
-                        }
-                    })
-                })
-                     
-        })
     })
 }
+},100)
+
+let btn = document.querySelectorAll('.btn')
+
+btn.forEach(e=>{
+    e.addEventListener('click', (e)=>{
+        let newBtn = document.querySelectorAll('.newBtn')
+        if(e == e){
+            newBtn[0].classList.add('block')
+            newBtn[1].style.display = 'block'
+            newBtn.style.display = 'none'
+        }
+    })
+})

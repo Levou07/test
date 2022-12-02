@@ -24,10 +24,16 @@
     background-color: #17212B;
     height: 50vh;
     width: 33%;
+    overflow-y: hidden;
+}
+.center__tg:hover{
     overflow-y: scroll;
 }
+
+/* scroll */
+
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 2px;
     border-radius: 10px;
 }
 ::-webkit-scrollbar-track{
@@ -43,6 +49,7 @@
     background-color: #0E1621;
     height: 50vh;
     width: 58%;
+    overflow: hidden;
 }
 .btn{
     color: white;
@@ -87,14 +94,20 @@
     font-size: 14px;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     background-color: #25303E;
 }
 
 .tg__blue{
     background-color: #2B5278;
-    margin-right: 20px;
+    margin-right: 3px;
 }
-.right__tg{
+.right__tg:hover{
     overflow-y: scroll;
 
+}
+.wrapper{
+    border-radius: 10px;
+    background-color: red;
+    max-width: 100%;
 }
