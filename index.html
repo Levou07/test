@@ -31,28 +31,6 @@
       <h2 class="hPass">Введите код пароль</h2>
       <input type="password" placeholder="Код доступа" class="inpPass">
       <button class="btnPass">Подтвердить</button>
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btnPass1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Default password
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Password</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Default password is 1234
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary backInp" data-bs-dismiss="modal">Enter code</button>
-      </div>
-    </div>
-  </div>
-</div>
     </div>
 
 <!-- body -->
@@ -120,7 +98,7 @@
         <ul class="center__ul">
           <div class="frm form-control">
             <input type="text" class="inp1 form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
-            <button class="lockBtn">
+            <button class="lockBtn" style="display: none;">
               <i class="bi bi-unlock-fill"></i>
             </button>
           </div>

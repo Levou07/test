@@ -185,10 +185,12 @@ ellft.addEventListener('click', ()=>{
 
 window.addEventListener('keyup', (e)=>{
     if(e.keyCode == 13){
-        if(inpPass.value == '1234'){
+        if(inpPass.value == None){
             tgWrapper.style.display = 'block'
             tgWrapper.style.display = 'flex'
             tgPassword.style.display = 'none'
+            lockPass.style.display = 'block'
+
         }
         else{
             inpPass.classList.add('errorPass')
@@ -196,23 +198,13 @@ window.addEventListener('keyup', (e)=>{
     }
 })
 
-btnPass.addEventListener('click', ()=>{
-    if(inpPass.value == '1234'){
-        tgWrapper.style.display = 'block'
-        tgWrapper.style.display = 'flex'
-        tgPassword.style.display = 'none'
-        console.log('Siz eski parol orqalik kirdingiz');
-    }
-    else{
-        inpPass.classList.add('errorPass')
-    }
-})
 
 lockPass.addEventListener('click', ()=>{
     tgWrapper.style.display = 'none'
     tgPassword.style.display = 'block'
     tgPassword.style.display = 'flex'
     inpPass.value = ''
+    lockPass.style.display = 'none'
 })
 
 let backInp = document.querySelector('.backInp')
