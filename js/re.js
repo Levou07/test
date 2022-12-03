@@ -14,7 +14,6 @@ btnR.addEventListener('click', ()=>{
         tgWrapper.style.display = 'flex'
         rePassword.style.display = 'none'
         lockPass.style.display = 'block'
-        newPass = rePass2.value
         console.log(newPass);
         rePass.value = ''
         rePass2.value = ''
