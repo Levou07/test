@@ -4,6 +4,7 @@ let rigth__tg = document.querySelector('.rigth__ul')
 let inpPass = document.querySelector('.inpPass')
 let btnPass = document.querySelector('.btnPass')
 let lockPass = document.querySelector('.lockBtn')
+let setPass = document.querySelector('.lockSett')
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((res)=> res.json())
@@ -138,6 +139,7 @@ let elbtn2 = document.querySelector('.btn2')
 let eltg__icon = document.querySelector('.tg__icon')
 let elbtn3 = document.querySelector('.btn3')
 let elbtnFul = document.querySelector('.btn__full')
+let setPass1 = document.querySelector('.btnSett')
 
 elbtn3.style.display = 'none'
 
@@ -147,6 +149,7 @@ elbtn2.addEventListener('click', ()=>{
     elbtn2.style.display = 'none'
     elbtn3.style.display = 'block'
     elbtnFul.style.display = 'none'
+    setPass1.style.display = 'none'
 })
 
 elbtn3.addEventListener('click', ()=>{
@@ -155,6 +158,7 @@ elbtn3.addEventListener('click', ()=>{
     elbtn2.style.display = 'block'
     elbtn3.style.display = 'none'
     elbtnFul.style.display = 'block'
+    setPass1.style.display = 'block'
 })
 
 let elbtn4 = document.querySelector('.btn4')
@@ -197,6 +201,7 @@ btnPass.addEventListener('click', ()=>{
         tgWrapper.style.display = 'block'
         tgWrapper.style.display = 'flex'
         tgPassword.style.display = 'none'
+        console.log('Siz eski parol orqalik kirdingiz');
     }
     else{
         inpPass.classList.add('errorPass')
@@ -208,4 +213,10 @@ lockPass.addEventListener('click', ()=>{
     tgPassword.style.display = 'block'
     tgPassword.style.display = 'flex'
     inpPass.value = ''
+})
+
+let backInp = document.querySelector('.backInp')
+
+backInp.addEventListener('click', ()=>{
+    inpPass.value = '1234'
 })
