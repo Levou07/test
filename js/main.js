@@ -208,7 +208,3 @@ lockPass.addEventListener('click', ()=>{
 })
 
 let backInp = document.querySelector('.backInp')
-
-backInp.addEventListener('click', ()=>{
-    inpPass.value = '1234'
-})
