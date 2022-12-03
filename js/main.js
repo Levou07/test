@@ -70,8 +70,13 @@ function tgpost(data){
     let newBttn = document.querySelectorAll('.newBtn')
     let elbtnFul = document.querySelector('.btn__full')
     
-    elbtnFul.addEventListener('click', ()=>{
-        newBttn.style.display = 'block'
+    elbtnFul.addEventListener('click', (e)=>{
+        console.log(e.target.id);
+        newBttn.forEach(i=>{
+            if(e.target.id == 'all'){
+                i.style.display = 'block'
+            }
+        })
     })
 
     btn.forEach(e=>{
@@ -118,6 +123,10 @@ let elinp1 = document.querySelector('.inp1')
 
 elinp1.addEventListener('click', ()=>{
     elinp1.style.backgroundColor = '#0E1621'
+    elinp1.style.width = '130px'
+    window.addEventListener('mousedown', ()=>{
+        elinp1.style.width = '100px'
+    })
 })
 
 let elbtn2 = document.querySelector('.btn2')
@@ -146,6 +155,7 @@ elbtn3.addEventListener('click', ()=>{
 let elbtn4 = document.querySelector('.btn4')
 let elbtn5 = document.querySelector('.btn5')
 let elbtn6 = document.querySelector('.btn6')
+let ellft = document.querySelector('.lft')
 
 elbtn4.addEventListener('click', (e)=>{
     if(e == e){
@@ -155,5 +165,11 @@ elbtn4.addEventListener('click', (e)=>{
     window.addEventListener('mousedown', ()=>{
         elbtn5.style.display = 'none'
         elbtn6.style.display = 'none'
+        ellft.style.backgroundColor = 'transparent'
     })
+})
+
+
+ellft.addEventListener('click', ()=>{
+    ellft.style.backgroundColor = '#17212B'
 })

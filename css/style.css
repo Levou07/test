@@ -22,14 +22,14 @@ body{
 }
 
 .left__tg{
-    width: 45px;
+    max-width: 45px;
     height: 50vh;
     background-color: #0E1621;
 }
 .center__tg{
     height: 50vh;
     overflow-y: hidden;
-    width: 300px;
+    max-width: 200px;
     background-color: #17212B;
 }
 .right__tg{
@@ -116,7 +116,7 @@ body{
 
 .inp1{
     background-color: #0E1621;
-    width: 85%;
+    width: 100px;
     border: none;
 }
 .inp1:active{
@@ -127,7 +127,8 @@ body{
     background-color: #17212B;
     border: none;
     display: flex;
-    width: 300px;
+    justify-content: space-between;
+    max-width: 100%;
     position: sticky;
 }
 .btn1{
@@ -137,6 +138,8 @@ body{
     color: #6C7883;
     border: none;
     border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .btn2{
@@ -159,7 +162,7 @@ body{
 }
 
 .btn4{
-    margin-left: 7px;
+    margin: 3px 7px;
     height: 35px;
     background-color: #0E1621;
     color: #ebebeb;
@@ -169,22 +172,20 @@ body{
 
 }
 .btn5{
-    margin-left: 7px;
+    margin: 3px 7px;
     height: 35px;
     background-color: #0E1621;
     color: #ebebeb;
     border: none;
-    margin-top: 7px;
     border-radius: 5px;
     display: none;
 }
 .btn6{
-    margin-left: 7px;
+    margin: 3px 7px;
     height: 35px;
     background-color: #0E1621;
     color: #b80000;
     border: none;
-    margin-top: 7px;
     border-radius: 5px;
     display: none;
 }
@@ -194,15 +195,16 @@ body{
 }
 .right__icon{
     display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 10px;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 7px;
     position: sticky;
     top: 0;
-    background-color: #0E1621;
 }
+.lft{
+    background-color: transparent;
+    margin: 0 5px;
+}
+
 .btn__full{
     margin-left: 7px;
     height: 35px;
