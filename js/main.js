@@ -1,4 +1,9 @@
+let tgWrapper = document.querySelector('.wrapper')
+let tgPassword = document.querySelector('.password')
 let rigth__tg = document.querySelector('.rigth__ul')
+let inpPass = document.querySelector('.inpPass')
+let btnPass = document.querySelector('.btnPass')
+let lockPass = document.querySelector('.lockBtn')
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((res)=> res.json())
@@ -123,7 +128,7 @@ let elinp1 = document.querySelector('.inp1')
 
 elinp1.addEventListener('click', ()=>{
     elinp1.style.backgroundColor = '#0E1621'
-    elinp1.style.width = '130px'
+    elinp1.style.width = '120px'
     window.addEventListener('mousedown', ()=>{
         elinp1.style.width = '100px'
     })
@@ -172,4 +177,35 @@ elbtn4.addEventListener('click', (e)=>{
 
 ellft.addEventListener('click', ()=>{
     ellft.style.backgroundColor = '#17212B'
+})
+
+window.addEventListener('keyup', (e)=>{
+    if(e.keyCode == 13){
+        if(inpPass.value == '1234'){
+            tgWrapper.style.display = 'block'
+            tgWrapper.style.display = 'flex'
+            tgPassword.style.display = 'none'
+        }
+        else{
+            inpPass.classList.add('errorPass')
+        }
+    }
+})
+
+btnPass.addEventListener('click', ()=>{
+    if(inpPass.value == '1234'){
+        tgWrapper.style.display = 'block'
+        tgWrapper.style.display = 'flex'
+        tgPassword.style.display = 'none'
+    }
+    else{
+        inpPass.classList.add('errorPass')
+    }
+})
+
+lockPass.addEventListener('click', ()=>{
+    tgWrapper.style.display = 'none'
+    tgPassword.style.display = 'block'
+    tgPassword.style.display = 'flex'
+    inpPass.value = ''
 })

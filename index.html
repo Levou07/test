@@ -8,11 +8,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/password.css">
 </head>
 <body>
   
   <div class="container">
-    <!-- input -->
+    <!-- password -->
+
+    <div class="password">
+      <h2 class="hPass">Введите код пароль</h2>
+      <input type="password" placeholder="Код доступа" class="inpPass">
+      <button class="btnPass">Подтвердить</button>
+    </div>
 
 <!-- body -->
     
@@ -76,6 +83,9 @@
         <ul class="center__ul">
           <div class="frm form-control">
             <input type="text" class="inp1 form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+            <button class="lockBtn">
+              <i class="bi bi-unlock-fill"></i>
+            </button>
           </div>
         </ul>
       </div>

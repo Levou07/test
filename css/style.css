@@ -5,6 +5,7 @@ body{
 .wrapper{
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .tg__icon{
@@ -213,4 +214,11 @@ body{
     border: none;
     margin-top: 7px;
     border-radius: 5px;
+}
+.lockBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #e6e3e3;
 }
